@@ -20,3 +20,5 @@ The objective? Wait for as long as possible without touching the button in the c
 - More easter eggs
 - Win screen
 - Cheat codes..?
+
+![alt preview](https://github.com/incognitobot-official/the-waiting-game/blob/main/preview.png?raw=true)
