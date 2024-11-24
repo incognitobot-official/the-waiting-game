@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ff5f6d, #ffc371);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.5s ease;
+  }
+  
+  /* Hard Mode Styling */
+  body.hard-mode {
+    background-color: #000;
+    color: #ff4500;
+    position: relative;
+  }
+  
+  body.hard-mode::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: url("fire.gif") repeat;
+    opacity: 0.3;
+  }
+  
+  /* Container Styling */
+  .container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Buttons */
+  button {
+    font-size: 20px;
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  #beginButton {
+    background-color: #27ae60;
+    color: white;
+  }
+  
+  #hardModeToggle {
+    background-color: #e67e22;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  #redButton {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  #redButton.grey {
+    background-color: grey;
+  }
+  
+  /* Timer */
+  #timer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #hardModeLabel {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff4500;
+    display: none;
+  }
+  
+  #restartButton {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: white;
+  }
+  
