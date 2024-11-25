@@ -82,6 +82,11 @@ function buttonClicked() {
   this.classList.add("grey");
   teleportingEnabled = false; // Disable teleporting after the button is clicked
 
+  // Stop the hard mode interval (to stop the button from moving)
+  if (hardModeInterval) {
+    clearInterval(hardModeInterval);
+  }
+
   // Random events
   const actions = [
     () => {
@@ -196,3 +201,6 @@ beginButton.addEventListener("click", () => {
   gameArea.appendChild(createRedButton());
   beginButton.disabled = true; // Disable the begin button after it's clicked
 });
+
+// Toggle hard mode when the toggle button is clicked
+hardModeToggle.addEventListener("click", toggleHardMode);
