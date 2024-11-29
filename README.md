@@ -7,7 +7,7 @@ A simple game.
 The objective? Wait for as long as possible without touching the button in the center.
 
 ## Features:
-- Different Modes (easy/hard). (NEW)
+- Different Modes (easy/hard). 
 - Different events upon button click.
 - The button tries to run away from you :)
 - Restart button.
