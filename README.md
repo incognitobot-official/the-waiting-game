@@ -8,6 +8,7 @@ The objective? Wait for as long as possible without touching the button in the c
 
 ## Features:
 - Different Modes (easy/hard). 
+- CLASSIC MODE! (NEW)
 - Different events upon button click.
 - The button tries to run away from you :)
 - Restart button.

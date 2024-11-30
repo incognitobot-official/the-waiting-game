@@ -8,7 +8,7 @@
   /* Body Styling */
   body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #4a6eff, #776aa5);
+    background: linear-gradient(to bottom, #ff5f6d, #ffc371);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,14 +67,6 @@
   #beginButton {
     background-color: #27ae60;
     color: white;
-  }
-
-  #classicButton {
-    background-color: #ff9d4d;
-    color: white;
-    top: 0%;
-    left: 0%;
-    position: fixed;
   }
   
   #hardModeToggle {
@@ -136,7 +128,7 @@
     color: #ff4500;
     display: none;
   }
-
+  
   #restartButton {
     position: absolute;
     bottom: 20px;
@@ -144,52 +136,4 @@
     background-color: #3498db;
     color: white;
   }
-
-  .trophy-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-  }
-
-  .trophy-button img {
-    width: 40px;
-    height: 40px;
-  }
-
-  /* Achievements Container Styling */
-  #achievementsContainer {
-    display: none; /* Start hidden */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-    text-align: center;
-  }
-
-  #achievementsContainer.hidden {
-    display: none; /* Ensure the hidden class applies */
-  }
-
-  #achievementsContainer h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #ffffff;
-  }
-
-  #backButton {
-    padding: 10px 20px;
-    background-color: #ff4500;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+  
